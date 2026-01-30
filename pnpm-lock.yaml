@@ -6,7 +6,11 @@ settings:
 
 importers:
 
-  .:
+  .: {}
+
+  pkg: {}
+
+  web:
     dependencies:
       '@base-ui/react':
         specifier: ^1.1.0
@@ -24,7 +28,7 @@ importers:
         specifier: ^2.1.1
         version: 2.1.1
       edge-inference:
-        specifier: link:../pkg
+        specifier: workspace:pkg
         version: link:../pkg
       lucide-react:
         specifier: ^0.563.0
